@@ -90,7 +90,7 @@ h6 {
   background-color: #3b3b3b;
   padding: 30px 20px;
 }
-.service h4 {
+.service h3 {
   font-size: 40px;
   text-align: center;
   color: #f4f8d9;
@@ -174,6 +174,7 @@ h6 {
   background-color: #222222;
   padding: 50px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   border-radius: 15px;
   width: 60%;
@@ -197,12 +198,12 @@ h6 {
   padding-bottom: 5px;
   
 }
-img{
+.players-box img{
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
-img:hover{
+.players-box img:hover{
   scale: 1.1;
 }
 .footer{
@@ -211,4 +212,85 @@ img:hover{
   background-color: #171717;
   text-align: center;
   color: #f4f8d9 ;
+}
+@media screen and (max-width:700px) {
+  .banner-box p {
+  font-size: 17px;
+  
+}
+ .banner-box h2 {
+  font-size: 24px;
+  
+}
+  .about{
+  flex-direction: column;
+ }
+ .about-img{
+  width: 100%;
+ }
+ .about-text h3 {
+  text-align: center;
+  font-size: 25px;
+}
+ .about-text li {
+  font-size: 17px;
+}
+ .service-text{
+  flex-direction: column;
+  gap: 10px;
+ }
+ .service-box{
+  width: 100%;
+ }
+ .battleground{
+  flex-direction: column;
+ }
+ .battleground-text h5{
+  font-size: 25px;
+  text-align: center;
+ }
+.battleground-text li{
+   font-size: 17px;
+}
+ .battleground-img{
+  width: 100%;
+ }
+ .players-box img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.players-box{
+  flex-direction: column;
+  padding: 10px;
+}
+.players-box p {
+  font-size: 17px;
+  padding-left: 0px;
+   text-align: center;
+}
+.players h5{
+  font-size: 25px;
+   text-align: center;
+    padding-left: 0px;
+}
+}
+.footer{
+font-size: 11px;
+}
+.service h3 {
+  font-size: 25px;
+}
+.service-text h4 {
+  font-size: 20px;
+}
+.service-text p {
+  font-size: 17px;
+}
+.nav h1 {
+  font-size: 30px;
+}
+.menu a {
+  font-size: 20px;
 }
